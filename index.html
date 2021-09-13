@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100;400;600&display=swap" rel="stylesheet">
+    <title>ITK Testimonials</title>
+</head>
+<style>
+    :root {
+        --wrapper-bg-color: #ECF2F8;
+        --card-bg-color: #FFFF;
+        --card-bg-dark-color: #48556A;
+
+        --card-title-dark-color: #d7e0e6;
+
+        --card-description-color: #8B8B8B;
+        --card-description-dark-color: #a9adb1;
+
+        --card-subtitle-color: #061033;
+        --card-subtitle-dark-color: #d7e0e6;
+
+        --border-alt-color: #9066C7;
+    }
+    body {
+        font-family: 'Glory', sans-serif;;
+    }
+    .wrapper {
+        background-color: var(--wrapper-bg-color);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 1em;
+        padding: 20px;
+    }
+    .card {
+        background-color: var(--card-bg-color);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 12px 22px 67px -24px rgba(0,0,0,0.21);
+        -webkit-box-shadow: 12px 22px 67px -24px rgba(0,0,0,0.21);
+        -moz-box-shadow: 12px 22px 67px -24px rgba(0,0,0,0.21);
+    }
+    .card-title {
+        display: flex;
+        align-items: center;
+    }
+    .card-title img {
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid rgb(189, 187, 187);
+    }
+    .card-title-container {
+        margin-left: 20px;
+    }
+    .card-title-container h4 {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .card-title-container span {
+        font-weight: lighter;
+    }
+    .card-subtitle {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .card:nth-child(1) {
+        grid-column: 1/3;
+        background-color: var(--card-bg-dark-color);
+    }
+    .card:nth-child(1) .card-title {
+        color: var(--card-title-dark-color)
+    }
+    .card:nth-child(1) .card-title img {
+        border-color: var(--border-alt-color);
+    }
+    .card:nth-child(1) .card-subtitle {
+        color: var(--card-subtitle-dark-color);
+    }
+    .card:nth-child(1) .card-description {
+        color: var(--card-description-dark-color);
+    }
+    .card:nth-child(5) {
+        grid-column: 2/4;
+    }
+    .card:nth-child(5) .card-title img {
+        border-color: var(--border-alt-color);
+    }
+    .card:nth-child(3) {
+        grid-column: 4;
+        grid-row: 1/3;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-title">
+                <img src="./img/foto1.jpg" alt="" width="30px" height="30px">
+                <div class="card-title-container">
+                    <h4>Daniel Alcudia ;)</h4>
+                    <span>Javascript Student</span>
+                </div>
+            </div>
+            <p class="card-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio minus assumenda neque ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio minus assumenda neque ratione.
+            </p>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum impedit maxime possimus, accusamus fugiat est repellat, quas laborum magni magnam dolorum ut totam dicta ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum impedit
+                maxime possimus, accusamus fugiat est repellat, quas laborum magni magnam dolorum ut totam dicta ad.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="./img/foto2.jpg" alt="" width="30px" height="30px">
+                <div class="card-title-container">
+                    <h4>Daniel Alcudia</h4>
+                    <span>Javascript Student</span>
+                </div>
+            </div>
+            <p class="card-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio minus assumenda neque ratione.
+            </p>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum
+                impedit maxime possimus, accusamus fugiat est repellat.
+            </p>
+        </div>  
+        <div class="card">
+            <div class="card-title">
+                <img src="./img/foto3.jpg" alt="" width="30px" height="30px">
+                <div class="card-title-container">
+                    <h4>Daniel Alcudia</h4>
+                    <span>Javascript Student</span>
+                </div>
+            </div>
+            <p class="card-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum
+                impedit maxime possimus, accusamus fugiat est repellat, quas laborum magni magnam dolorum ut totam dicta ad.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum
+                impedit maxime possimus, accusamus fugiat est repellat, quas laborum magni magnam dolorum ut totam dicta ad.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum
+                impedit maxime possimus, accusamus fugiat est repellat, quas laborum magni magnam dolorum ut totam dicta ad.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="./img/foto4.jpg" alt="" width="30px" height="30px">
+                <div class="card-title-container">
+                    <h4>Daniel Alcudia</h4>
+                    <span>Javascript Student</span>
+                </div>
+            </div>
+            <p class="card-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum
+                impedit maxime possimus, accusamus fugiat est repellat.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <img src="./img/foto5.jpg" alt="" width="30px" height="30px">
+                <div class="card-title-container">
+                    <h4>Daniel Alcudia</h4>
+                    <span>Javascript Student</span>
+                </div>
+            </div>
+            <p class="card-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio minus assumenda neque ratione. Nam odio minus assumenda neque ratione.
+            </p>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae necessitatibus ipsum dolore quia voluptatum
+                impedit maxime possimus, accusamus fugiat est repellat, quas laborum magni magnam dolorum ut totam dicta ad.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
